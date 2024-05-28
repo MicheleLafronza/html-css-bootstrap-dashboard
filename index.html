@@ -19,16 +19,21 @@
 
     <div class="wrapper">
 
+        <!-- INIZIO HEADER -->
         <header class="fixed-top">
-
+            <!-- NAVBAR -->
             <nav class="navbar bg-light">
                 <div class="container-fluid">
 
+                    <!-- logo boolean -->
                     <a class="navbar-brand" href="#">Navbar</a>
+
+                    <!-- barra di ricerca -->
                     <form class="d-flex flex-grow-1" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     </form>
 
+                    <!-- menu a sinistra -->
                     <ul class="nav">
                         <li class="nav-item only-desk">
                           <a class="nav-link" href="#">I</a>
@@ -43,6 +48,8 @@
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 I
                               </a>
+
+                            <!-- sottomenù -->
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -56,17 +63,22 @@
                 
             
             </nav>
+            <!-- /FINE NAVBAR -->
 
         </header>
+        <!-- /FINE HEADER -->
 
+        <!-- INIZIO MAIN -->
         <main>
 
             <div class="container-fluid">
 
-                <div class="row fix-pos">
+                <div class="row fix-padding">
 
+                    <!-- COLONNA SIDENAV -->
                     <div class="col-2 ms_h-col ms_relative debug">
 
+                        <!-- SIDENAV -->
                         <ul class="nav flex-column">
                             <li class="nav-item">
                               <a class="nav-link" href="#">i<span class="only-desk ps-2">Home</span></a>
@@ -81,18 +93,68 @@
                                 <a class="nav-link" href="#">i<span class="only-desk ps-2">Admin</span></a>
                             </li>
                         </ul>
-
-                        
+                        <!-- /FINE SIDENAV -->
 
                     </div>
+                    <!-- /FINE COLONNA SIDENAV -->
 
-                    <div class="col-10 debug"></div>
+                    <!-- COLONNA CONTENUTO GENERALE -->
+                    <div class="col-10 debug ms_h-col overflow-auto">
+
+                        <!-- ROW CONTENUTO SUPERIORE -->
+                        <div class="row mb-4">
+
+                            <div class="col-12 col-md-4 order-md-3 debug-2">
+                                Nuovo Studente
+                            </div>
+                            <div class="col-12 col-md-4 order-md-1 debug-2">
+                                BOOLEAN
+                            </div>
+                            <div class="col-12 col-md-4 order-md-2 debug-2">
+                                Studenti online
+                            </div>
+
+                        </div>
+                        <!-- /FINE ROW CONTENUTO SUPERIORE -->
+
+                        <div class="row">
+
+
+                            <div class="col-12 col-lg-7"> 
+                                <div class="col-12 mb-3 debug-2 debug-alt">
+                                        Prossime Classi
+                                </div>
+
+                                <div class="col-12 mb-3 debug-2 debug-alt-2">
+                                        FAQ
+                                </div>
+                            </div>     
+                                    
+
+                            <div class="col-12 col-lg-4">   
+                                <div class="col-12 mb-3 debug-2 debug-alt-3">
+                                        TO DO
+                                </div>
+
+                                <div class="col-12 mb-3 debug-2 debug-alt-4">
+                                        GRAFICO
+                                </div>
+                            </div>     
+
+                        </div>
+
+
+
+
+                    </div>
+                    <!-- /FINE COLONNA CONTENUTO GENERALE -->
 
                 </div>
 
             </div>
 
         </main>
+        <!-- /FINE MAIN -->
 
     </div>    
 

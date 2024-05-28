@@ -5,13 +5,17 @@
 }
 
 .wrapper {
+    min-width: 380px;
     height: 100vh;
 }
 /* /FINE REGOLE GENERALi */
 
+/* REGOLE HEADER */
+
+/* /FINE REGOLE HEADER */
 
 /* REGOLE MAIN */
-.fix-pos {
+.fix-padding {
     padding-top: 56px;
 }
 
@@ -52,6 +56,29 @@
     /* background-color: red; */
     border: 1px solid black;
     
+}
+
+.debug-2 {
+    background-color: red;
+    border: 1px solid black;
+    /* min-height: 100px; */
+    
+
+}
+
+.debug-alt {
+    height: 70px;
+}
+
+.debug-alt-2 {
+    height: 30px;
+}
+
+.debug-alt-3 {
+    height: 25px;
+}
+.debug-alt-4 {
+    height: 40px;
 }
 
 
