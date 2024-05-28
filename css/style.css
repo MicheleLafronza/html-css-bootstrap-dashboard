@@ -7,3 +7,51 @@
 .wrapper {
     height: 100vh;
 }
+/* /FINE REGOLE GENERALi */
+
+
+/* REGOLE MAIN */
+.fix-pos {
+    padding-top: 56px;
+}
+
+.admin {
+    position: absolute;
+    bottom: 10px;
+}
+
+.ms_h-col {
+    height: calc(100vh - 56px);   
+}
+
+.ms_relative {
+    position: relative;
+}
+
+/* /FINE REGOLE MAIN */
+
+
+
+/* MEDIA QUERY */
+.only-desk {
+    display: none;
+}
+
+@media all and (min-width:992px) {
+    .only-desk {
+        display:inline-block;
+    }
+}
+/* /FINE MEDIA QUERY */
+
+
+
+/* DEBUG */
+.debug {
+    
+    /* background-color: red; */
+    border: 1px solid black;
+    
+}
+
+
