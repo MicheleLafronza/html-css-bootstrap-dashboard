@@ -90,21 +90,21 @@
                 <div class="row fix-padding">
 
                     <!-- COLONNA SIDENAV -->
-                    <div class="col-2 ms_h-col ms_relative debug">
+                    <div class="col-2 ms_h-col ms_relative ms_bg-sidenav">
 
                         <!-- SIDENAV -->
                         <ul class="nav flex-column">
                             <li class="nav-item">
-                              <a class="nav-link" href="#">i<span class="only-desk ps-2">Home</span></a>
+                              <a class="nav-link" href="#"><i class="fa-solid fa-house"></i><span class="only-desk ps-2">Home</span></a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">i<span class="only-desk ps-2">Stats</span></a>
+                              <a class="nav-link" href="#"><i class="fa-solid fa-chart-simple"></i><span class="only-desk ps-2">Stats</span></a>
                             </li>
                             <li class="nav-item">
-                              <a class="nav-link" href="#">i<span class="only-desk ps-2">Signal</span></a>
+                              <a class="nav-link" href="#"><i class="fa-solid fa-signal"></i><span class="only-desk ps-2">Signal</span></a>
                             </li>
                             <li class="nav-item admin">
-                                <a class="nav-link" href="#">i<span class="only-desk ps-2">Admin</span></a>
+                                <a class="nav-link" href="#"><i class="fa-solid fa-gear"></i><span class="only-desk ps-2">Admin</span></a>
                             </li>
                         </ul>
                         <!-- /FINE SIDENAV -->
@@ -116,23 +116,64 @@
                     <div class="col-10 debug ms_h-col overflow-auto">
 
                         <!-- ROW CONTENUTO SUPERIORE -->
-                        <div class="row mb-4">
+                        <div class="row mb-4 ms_bg-blue ms_t-wh justify-content-between">
 
-                            <div class="col-12 col-md-4 order-md-3 debug-2">
-                                Nuovo Studente
+                            <!-- COL NUOVO STUDENTE -->
+                            <div class="col-12 col-md-3 order-md-3 p-3">
+
+                                <!-- OFFCANVAS -->
+                                <span class="pe-3">Nuovo Studente</span>
+                                <button class="btn btn-primary" id="offcan-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+
+                                <div class="offcanvas offcanvas-end ms_t-bl" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasLabel">
+                                    <div class="offcanvas-header">
+                                      <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                      Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
+                                    </div>
+                                </div>
+                                <!-- /FINE OFFCANVAS -->
+
                             </div>
-                            <div class="col-12 col-md-4 order-md-1 debug-2">
-                                BOOLEAN
+                            <!-- /FINE COL NUOVO STUDENTE -->
+
+                            <!-- COL BOOLEAN PERCORSO -->
+                            <div class="col-12 col-md-6 order-md-1 p-3">
+                                <span class="fs-4">Boolean</span>
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                      <li class="breadcrumb-item mb-2"><a href="#">Piano blaze</a></li>
+                                      <li class="breadcrumb-item mb-2"><a href="#">3 app</a></li>
+                                      <li class="breadcrumb-item mb-2 d-none d-lg-inline-block"><a href="#">Boolean mobile app</a></li>
+                                      <li class="breadcrumb-item mb-2 d-none d-lg-inline-block"><a href="#">Boolean web app</a></li>
+                                      <li class="breadcrumb-item mb-2 d-none d-lg-inline-block"><a href="#">Boolean blog app</a></li>
+                                      <li class="breadcrumb-item mb-2 d-lg-none"><a href="#"><i class="fa-solid fa-plus"></i></a></li>
+                                    </ol>
+                                </nav>
                             </div>
-                            <div class="col-12 col-md-4 order-md-2 debug-2">
-                                Studenti online
+                            <!-- /FINE COL BOOLEAN PERCORSO -->
+
+                            <!-- COL STUDENTI ONLINE -->
+                            <div class="col-12 col-md-3 order-md-2 p-3">
+                                <span class="fs-5">
+                                    Studenti online negli ultimi 30 minuti
+                                </span>
+
+                                <span class="fs-3 d-block">
+                                    125
+                                </span>
                             </div>
+                            <!-- /FINE COL STUDENTI ONLINE -->
 
                         </div>
                         <!-- /FINE ROW CONTENUTO SUPERIORE -->
 
+                        <!-- INIZIO ROW CONTENUTO INFERIORE -->
                         <div class="row">
-
 
                             <div class="col-12 col-lg-7"> 
                                 <div class="col-12 mb-3 debug-2 debug-alt">
@@ -144,7 +185,6 @@
                                 </div>
                             </div>     
                                     
-
                             <div class="col-12 col-lg-4">   
                                 <div class="col-12 mb-3 debug-2 debug-alt-3">
                                         TO DO
@@ -156,9 +196,7 @@
                             </div>     
 
                         </div>
-
-
-
+                        <!-- /FINE ROW CONTENUTO INFERIORE -->
 
                     </div>
                     <!-- /FINE COLONNA CONTENUTO GENERALE -->

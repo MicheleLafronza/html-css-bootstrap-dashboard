@@ -9,10 +9,37 @@
     height: 100vh;
 }
 
+.ms_relative {
+    position: relative;
+}
+
+.ms_t-wh {
+    color: white;
+}
+
+.ms_t-bl {
+    color: black;
+}
+
+
+
+
+
+/* BACKGROUNDS */
 .ms_bg-white {
     background-color: white;
 }
-/* /FINE REGOLE GENERALi */
+
+.ms_bg-blue {
+    background-color: rgba(27,114,232,255);
+}
+
+.ms_bg-sidenav {
+    background-color: rgba(5,30,52,255);
+    background-image: url(../img/sidebar-bg.png);
+}
+/* /FINE BACKGROUNDS */
+/* /FINE REGOLE GENERALI */
 
 
 
@@ -63,18 +90,57 @@ header #bell {
     padding-top: 58px;
 }
 
-.admin {
-    position: absolute;
-    bottom: 10px;
-}
-
 .ms_h-col {
     height: calc(100vh - 56px);   
 }
 
-.ms_relative {
-    position: relative;
+
+/* REGOLE SIDEBAR */
+main .nav-link {
+    color: white;
 }
+
+.nav-link .fa-solid {
+    width: 20px;
+}
+
+.admin {
+    position: absolute;
+    bottom: 10px;
+}
+/* /FINE REGOLE SIDEBAR */
+
+/* REGOLE CONTENUTO SUPERIORE */
+main .breadcrumb a {
+    color: white;
+    text-decoration: none;
+    background-color: rgba(22,91,186,255);
+    padding: 5px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: white;
+    content: ">>";
+}
+
+
+
+/* OFFCANVAS */
+#offcan-button {
+    background-color: rgba(27,114,232,255);
+    border: 1px solid white;
+}
+/* /FINE OFFCANVAS */
+
+
+
+
+
+
+/* /FINE REGOLE CONTENUTO SUPERIORE */
+
 
 /* /FINE REGOLE MAIN */
 
@@ -103,7 +169,7 @@ header #bell {
 }
 
 .debug-2 {
-    background-color: red;
+    /* background-color: red; */
     border: 1px solid black;
     /* min-height: 100px; */
     
