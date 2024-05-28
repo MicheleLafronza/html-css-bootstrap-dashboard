@@ -22,38 +22,52 @@
         <!-- INIZIO HEADER -->
         <header class="fixed-top">
             <!-- NAVBAR -->
-            <nav class="navbar bg-light">
+            <nav class="navbar ms_bg-white">
                 <div class="container-fluid">
 
                     <!-- logo boolean -->
-                    <a class="navbar-brand" href="#">Navbar</a>
+                    <a class="navbar-brand" href="#">
+                        <img class="d-none d-lg-inline-block" id="logo-image" src="img/logo.svg" alt="">
+                        <img class="d-lg-none" id="logo-mobile" src="img/mobile-logo.png" alt="">
+                    </a>
 
                     <!-- barra di ricerca -->
-                    <form class="d-flex flex-grow-1" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <form class="d-flex flex-grow-1">
+                        <div class="input-group">
+                            <span class="input-group-text" id="search-icon">
+                                <i class="fas fa-search"></i>
+                            </span>
+                            <input type="search" class="form-control" placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search" aria-describedby="search-icon">
+                        </div>
                     </form>
 
-                    <!-- menu a sinistra -->
+                    <!-- menu a destra -->
                     <ul class="nav">
                         <li class="nav-item only-desk">
-                          <a class="nav-link" href="#">I</a>
+                          <a class="nav-link" href="#">
+                            <i class="fa-solid fa-bars"></i>
+                          </a>
                         </li>
                         <li class="nav-item only-desk">
-                          <a class="nav-link" href="#">I</a>
+                          <a class="nav-link" href="#">
+                            <i class="fa-solid fa-question"></i>
+                          </a>
                         </li>
                         <li class="nav-item only-desk">
-                          <a class="nav-link" href="#">I</a>
+                          <a class="nav-link" href="#">
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                          </a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                I
-                              </a>
+                            <a class="nav-link dropdown-toggle" id="bell" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-bell"></i>
+                            </a>
 
                             <!-- sottomenù -->
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
                               </ul>
                         </li>
                       </ul>
