@@ -13,6 +13,7 @@
     position: relative;
 }
 
+/* REGOLE TEXT COLOR */
 .ms_t-wh {
     color: white;
 }
@@ -20,6 +21,22 @@
 .ms_t-bl {
     color: black;
 }
+/* /FINE REGOLE TEXT COLOR */
+
+/* REGOLE BORDI */
+.ms_border {
+    border: 1px solid rgba(205,205,205,255);
+}
+
+.ms_border-bottom {
+    border-bottom: 1px solid rgba(205,205,205,255);
+}
+
+.ms_border-radius {
+    border-radius: 10px;
+}
+
+
 
 
 
@@ -37,6 +54,10 @@
 .ms_bg-sidenav {
     background-color: rgba(5,30,52,255);
     background-image: url(../img/sidebar-bg.png);
+}
+
+.ms_bg-title-card {
+    background-color: rgba(247,247,247,255);
 }
 /* /FINE BACKGROUNDS */
 /* /FINE REGOLE GENERALI */
@@ -94,6 +115,13 @@ header #bell {
     height: calc(100vh - 56px);   
 }
 
+.ms_side-col {
+    width: 70px;
+}
+
+.ms_main-col {
+    width: calc(100% - 70px);
+}
 
 /* REGOLE SIDEBAR */
 main .nav-link {
@@ -134,13 +162,52 @@ main .breadcrumb a {
 }
 /* /FINE OFFCANVAS */
 
-
-
-
-
-
 /* /FINE REGOLE CONTENUTO SUPERIORE */
 
+/* INIZIO REGOLE CONTENUTO INFERIORE */
+#tbl-cnt {
+    width: 35%;
+}
+
+#tbl-cnt::before {
+    content: "</>";
+    background-color: rgba(242,101,81,255);
+    margin-right: 5px;
+    padding: 3px;
+    border-radius: 50%;
+    color: white;
+}
+
+.tags-done {
+    background-color: rgba(25,135,84,255);
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.tags-process {
+    background-color: rgba(255,193,7,255);
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.tags-failed {
+    background-color: rgba(220,53,69,255);
+    padding: 3px;
+    border-radius: 10px;
+}
+
+.tab-icns {
+    border: 2px solid rgba(108,117,125,255);
+    color: rgba(108,117,125,255);
+    padding: 4px;
+    border-radius: 5px;
+    margin-right: 1px;
+    display: inline-block;
+}
+
+
+
+/* /FINE REGOLE CONTENUTO INFERIORE */
 
 /* /FINE REGOLE MAIN */
 
@@ -154,6 +221,20 @@ main .breadcrumb a {
 @media all and (min-width:992px) {
     .only-desk {
         display:inline-block;
+    }
+
+    .ms_side-col {
+        width: 160px;
+    }
+
+    .ms_main-col {
+        width: calc(100% - 160px);
+    }
+}
+
+@media all and (max-width:582px) {
+    .tbl-no-d {
+        display: none;
     }
 }
 /* /FINE MEDIA QUERY */

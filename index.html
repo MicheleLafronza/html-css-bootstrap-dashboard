@@ -17,6 +17,7 @@
 </head>
 <body>
 
+    <!-- WRAPPER GENERALE -->
     <div class="wrapper">
 
         <!-- INIZIO HEADER -->
@@ -87,10 +88,11 @@
 
             <div class="container-fluid">
 
+                <!-- FIX PADDING -->
                 <div class="row fix-padding">
 
                     <!-- COLONNA SIDENAV -->
-                    <div class="col-2 ms_h-col ms_relative ms_bg-sidenav">
+                    <div class="ms_h-col ms_relative ms_bg-sidenav ms_side-col">
 
                         <!-- SIDENAV -->
                         <ul class="nav flex-column">
@@ -108,12 +110,12 @@
                             </li>
                         </ul>
                         <!-- /FINE SIDENAV -->
-
+                    
                     </div>
                     <!-- /FINE COLONNA SIDENAV -->
 
                     <!-- COLONNA CONTENUTO GENERALE -->
-                    <div class="col-10 debug ms_h-col overflow-auto">
+                    <div class="ms_h-col overflow-auto ms_main-col"> 
 
                         <!-- ROW CONTENUTO SUPERIORE -->
                         <div class="row mb-4 ms_bg-blue ms_t-wh justify-content-between">
@@ -176,8 +178,148 @@
                         <div class="row">
 
                             <div class="col-12 col-lg-7"> 
-                                <div class="col-12 mb-3 debug-2 debug-alt">
-                                        Prossime Classi
+                                <div class="col-12 mb-3 ms_border ms_border-radius">
+                                        <h4 class="p-2 ms_border-bottom ms_bg-title-card">Prossime classi</h4>
+
+                                        <!-- INIZIO TABELLA -->
+                                        <div class="p-2">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                <tr>
+                                                    <th scope="col">Nome</th>
+                                                    <th class="tbl-no-d" scope="col">Data inizio</th>
+                                                    <th class="tbl-no-d" scope="col">ROI</th>
+                                                    <th scope="col">Stato</th>
+                                                    <th scope="col">Azioni</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td id="tbl-cnt">
+                                                        Classe 75
+                                                    </td>
+                                                    <td class="tbl-no-d">15 Feb 2021</td>
+                                                    <td class="tbl-no-d">20%</td>
+                                                    <td>
+                                                        <span class="tags-done">Done</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href=""><span class="tab-icns"><i class="fa-solid fa-pencil"></i></span></a>
+
+                                                        <a href=""><span class="tab-icns"><i class="fa-solid fa-trash"></i></span></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="tbl-cnt">
+                                                        Classe 76
+                                                    </td>
+                                                    <td class="tbl-no-d">16 Feb 2021</td>
+                                                    <td class="tbl-no-d">20%</td>
+                                                    <td>
+                                                        <span class="tags-done">Done</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href=""><span class="tab-icns"><i class="fa-solid fa-pencil"></i></span></a>
+
+                                                        <a href=""><span class="tab-icns"><i class="fa-solid fa-trash"></i></span></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="tbl-cnt">
+                                                        Classe 77
+                                                    </td>
+                                                    <td class="tbl-no-d">17 Feb 2021</td>
+                                                    <td class="tbl-no-d">20%</td>
+                                                    <td>
+                                                        <span class="tags-process">Process</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href=""><span class="tab-icns"><i class="fa-solid fa-pencil"></i></span></a>
+
+                                                        <a href=""><span class="tab-icns"><i class="fa-solid fa-trash"></i></span></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="tbl-cnt">
+                                                        Classe 78
+                                                    </td>
+                                                    <td class="tbl-no-d">18 Feb 2021</td>
+                                                    <td class="tbl-no-d">20%</td>
+                                                    <td>
+                                                        <span class="tags-done">Done</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href=""><span class="tab-icns"><i class="fa-solid fa-pencil"></i></span></a>
+
+                                                        <a href=""><span class="tab-icns"><i class="fa-solid fa-trash"></i></span></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="tbl-cnt">
+                                                        Classe 79
+                                                    </td>
+                                                    <td class="tbl-no-d">19 Feb 2021</td>
+                                                    <td class="tbl-no-d">20%</td>
+                                                    <td>
+                                                        <span class="tags-failed">Failed</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href=""><span class="tab-icns"><i class="fa-solid fa-pencil"></i></span></a>
+
+                                                        <a href=""><span class="tab-icns"><i class="fa-solid fa-trash"></i></span></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="tbl-cnt">
+                                                        Classe 80
+                                                    </td>
+                                                    <td class="tbl-no-d">20 Feb 2021</td>
+                                                    <td class="tbl-no-d">20%</td>
+                                                    <td>
+                                                        <span class="tags-done">Done</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href=""><span class="tab-icns"><i class="fa-solid fa-pencil"></i></span></a>
+
+                                                        <a href=""><span class="tab-icns"><i class="fa-solid fa-trash"></i></span></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="tbl-cnt">
+                                                        Classe 81
+                                                    </td>
+                                                    <td class="tbl-no-d">21 Feb 2021</td>
+                                                    <td class="tbl-no-d">20%</td>
+                                                    <td>
+                                                        <span class="tags-failed">Failed</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href=""><span class="tab-icns"><i class="fa-solid fa-pencil"></i></span></a>
+
+                                                        <a href=""><span class="tab-icns"><i class="fa-solid fa-trash"></i></span></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td id="tbl-cnt">
+                                                        Classe 82
+                                                    </td>
+                                                    <td class="tbl-no-d">22 Feb 2021</td>
+                                                    <td class="tbl-no-d">20%</td>
+                                                    <td>
+                                                        <span class="tags-done">Done</span>
+                                                    </td>
+                                                    <td>
+                                                        <a href=""><span class="tab-icns"><i class="fa-solid fa-pencil"></i></span></a>
+
+                                                        <a href=""><span class="tab-icns"><i class="fa-solid fa-trash"></i></span></a>
+                                                    </td>
+                                                </tr>
+                                                
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                          <!-- /FINE TABELLA -->
+
                                 </div>
 
                                 <div class="col-12 mb-3 debug-2 debug-alt-2">
@@ -197,18 +339,21 @@
 
                         </div>
                         <!-- /FINE ROW CONTENUTO INFERIORE -->
-
-                    </div>
+                    
+                    </div>    
                     <!-- /FINE COLONNA CONTENUTO GENERALE -->
 
                 </div>
+                <!-- /FINE ROW FIX PADDING -->
 
             </div>
+            <!-- /FINE CONTAINER FLUID  -->
 
         </main>
         <!-- /FINE MAIN -->
 
     </div>    
+    <!-- /FINE WRAPPER GENERALE -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
