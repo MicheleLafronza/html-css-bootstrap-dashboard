@@ -131,11 +131,82 @@
 
                                 <div class="offcanvas offcanvas-end ms_t-bl" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasLabel">
                                     <div class="offcanvas-header">
-                                      <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+                                      <h5 class="offcanvas-title" id="offcanvasLabel">Inserisci un nuovo studente</h5>
                                       <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
                                     <div class="offcanvas-body">
-                                      Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements here.
+
+                                        <!-- INIZIO FORM -->
+                                        <form class="row g-3">
+
+                                            <div class="col-6">
+                                                <label for="StudentName" class="form-label">Nome</label>
+                                                <input type="text" class="form-control" id="StudentName" required>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <label for="StudentSurname" class="form-label">Cognome</label>
+                                                <input type="text" class="form-control" id="StudentSurname" required>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <label for="StudentEmail" class="form-label">Email</label>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" id="basic-addon1">@</span>
+                                                    <input type="email" class="form-control" id="StudentEmail" required>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <label for="StudentPassword" class="form-label">Password</label>
+                                                <input type="password" class="form-control" id="StudentPassword" required>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label for="StudentAdress" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control" id="StudentAdress" required>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <label for="StudentCity" class="form-label">Citt&agrave;</label>
+                                                <input type="text" class="form-control" id="StudentCity" required>
+                                            </div>
+
+                                            <div class="col-4">
+                                                <label for="StudentState" class="form-label">Stato</label>
+                                                <select class="form-select" aria-label="Default select example" required>
+                                                    <option selected disabled>Scegli...</option>
+                                                    <option value="1">Italia</option>
+                                                    <option value="2">Francia</option>
+                                                    <option value="3">Germania</option>
+                                                  </select>
+                                            </div>
+
+                                            <div class="col-2">
+                                                <label for="StudentCAP" class="form-label">CAP</label>
+                                                <input type="text" class="form-control" id="StudentCAP" required>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <label for="formFile" class="form-label">Foto</label>
+                                                <input class="form-control" type="file" id="formFile" required>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <input class="form-check-input" type="checkbox" value="" id="Privacy" required>
+                                                <label class="form-check-label" for="Privacy">
+                                                  Seleziona per proseguire
+                                                </label>
+                                            </div>
+
+                                            <div class="col-12">
+                                                <button type="button" class="btn btn-primary">Salva</button>
+                                                <button type="button" class="btn btn-warning">Svuota</button>
+
+                                            </div>
+                                        </form>
+                                        <!-- /FINE FORM -->
+                                      
                                     </div>
                                 </div>
                                 <!-- /FINE OFFCANVAS -->
